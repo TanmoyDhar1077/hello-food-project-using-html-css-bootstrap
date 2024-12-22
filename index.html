@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food App</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+  <link rel="stylesheet" href="./vendor/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-section">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="./assets/img/logo.png" alt="logo">
+          <span class="color_1">Hello</span><span class="color_2">Food</span>
+        </a>
+
+        <!-- Navbar toggler for smaller screens -->
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item my_dropdown_item">
+              <a class="nav-link" href="#">Menu</a>
+              <div class="my_dropdown">
+                <ul class="list-unstyled bg-white border-1 py-3 ps-2 pe-5">
+                  <li>
+                    <a href="javascript:void(0)" class="text-secondary text-decoration-none">Burger</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="text-secondary text-decoration-none">Pizza</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="text-secondary text-decoration-none">Pasta</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <!-- Bootstrap Carousel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+
+      <!-- Carousel Items -->
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="./assets/img/bg-img-2.jpeg" class="d-block" alt="Slide 1">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./assets/img/bg-img-3.jpg" class="d-block" alt="Slide 2">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./assets/img/bg-img-4.webp" class="d-block" alt="Slide 3">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./assets/img/bg-img-5.webp" class="d-block" alt="Slide 3">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- <div class="banner-slide">
+            <img src="/assets/img/bg-img-3.jpg" alt="bg-img">
+        </div> -->
+    <div class="container">
+      <div class="row">
+        <div class="text_position">
+          <div class="col-md-6">
+            <h1 class="color_1">Enjoy Your Healthy <br> Delicacy</h1>
+            <p class="color_2">Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Quisquam, quae.</p>
+            <button type="button" class="btn btn-danger">Order Now</button>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Gallery-Section -->
+  <section class="gallery-section pt-lg-4">
+    <h1 class="color_1 text-center py-4">Food Gallery</h1>
+    <div class="container">
+
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+
+        <li class="nav-item me-3" role="presentation">
+          <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all"
+            type="button" role="tab" aria-controls="pills-all" aria-selected="true">All</button>
+        </li>
+
+        <li class="nav-item me-3" role="presentation">
+          <button class="nav-link" id="pills-pizza-tab" data-bs-toggle="pill" data-bs-target="#pills-pizza"
+            type="button" role="tab" aria-controls="pills-pizza" aria-selected="false">Pizza</button>
+        </li>
+
+        <li class="nav-item me-3" role="presentation">
+          <button class="nav-link" id="pills-pasta-tab" data-bs-toggle="pill" data-bs-target="#pills-pasta"
+            type="button" role="tab" aria-controls="pills-pasta" aria-selected="false">Pasta</button>
+        </li>
+        <li class="nav-item me-3" role="presentation">
+          <button class="nav-link" id="pills-burger-tab" data-bs-toggle="pill" data-bs-target="#pills-burger"
+            type="button" role="tab" aria-controls="pills-burger" aria-selected="false">Burger</button>
+        </li>
+
+      </ul>
+
+      <div class="tab-content" id="pills-tabContent">
+        <!-- All Tab -->
+        <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
+          <div class="row">
+
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card overflow-hidden h-100">
+                <div class="card_img">
+                  <img src="./assets/img/food menu-1.jpeg" class="img-fluid" alt="Food Item">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card overflow-hidden h-100">
+                <div class="card_img">
+                  <img src="./assets/img/food menu-2.jpeg" class="img-fluid" alt="Food Item">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card overflow-hidden h-100">
+                <div class="card_img">
+                  <img src="./assets/img/food menu-3.jpeg" class="img-fluid" alt="Food Item">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card overflow-hidden h-100">
+                <div class="card_img">
+                  <img src="./assets/img/food menu-4.jpeg" class="img-fluid" alt="Food Item">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card overflow-hidden h-100">
+                <div class="card_img">
+                  <img src="./assets/img/food menu-5.jpeg" class="img-fluid" alt="Food Item">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card overflow-hidden h-100">
+                <div class="card_img">
+                  <img src="./assets/img/food menu-6.jpeg" class="img-fluid" alt="Food Item">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card overflow-hidden h-100">
+                <div class="card_img">
+                  <img src="./assets/img/food menu-7.jpeg" class="img-fluid" alt="Food Item">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card overflow-hidden h-100">
+                <div class="card_img">
+                  <img src="./assets/img/food menu-8.jpeg" class="img-fluid" alt="Food Item">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card overflow-hidden h-100">
+                <div class="card_img">
+                  <img src="./assets/img/food menu-9.jpeg" class="img-fluid" alt="Food Item">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Pizza Tab -->
+        <div class="tab-pane fade" id="pills-pizza" role="tabpanel" aria-labelledby="pills-pizza-tab">
+          <div class="row">
+
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card overflow-hidden h-100">
+                <div class="card_img">
+                  <img src="./assets/img/pizza-1.jpeg" class="img-fluid" alt="Pizza">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title color_1">Spicy Sausage</h5>
+                  <p class="card-text color_3">Topped with soft chunks of spicy sausage surrounded by parmesan cheese
+                    infused with kisan cheese which finally gets topped off with our special naga sauce to give your
+                    tastebud that extra kick</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card overflow-hidden h-100">
+                <div class="card_img">
+                  <img src="./assets/img/pizza-2.jpg" class="img-fluid" alt="Pizza">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title color_1">Creamy Chicken & Sausage</h5>
+                  <p class="card-text color_3">Topped with tender creamy chicken pieces, a pack of sausages which gets
+                    surrounded by an army of cheese</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card overflow-hidden h-100">
+                <div class="card_img">
+                  <img src="./assets/img/pizza-3.jpg" class="img-fluid" alt="Pizza">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title color_1">Chicken Alfredo</h5>
+                  <p class="card-text color_3">Topped with alfredo chicken cubes & mushrooms, showered with a white
+                    sauce based on mozzarella, cheddar & parmesan cheese</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card overflow-hidden h-100">
+                <div class="card_img">
+                  <img src="./assets/img/pizza-4.jpg" class="img-fluid" alt="Pizza">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title color_1">Classic Margherita</h5>
+                  <p class="card-text color_3">Topped with original italian tomato sauce, mozzarella & cheddar cheese,
+                    roasted tomato, fragrant oregano & basil leave</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card overflow-hidden h-100">
+                <div class="card_img">
+                  <img src="./assets/img/pizza-5.jpg" class="img-fluid" alt="Pizza">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title color_1">The Pepperonia</h5>
+                  <p class="card-text color_3">Spread of tomato sauce with smoky pepperoni, mozzarella, topped up with
+                    fragrant oregano</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card overflow-hidden h-100">
+                <div class="card_img">
+                  <img src="./assets/img/pizza-6.jpg" class="img-fluid" alt="Pizza">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title color_1">Spicy Shorisha</h5>
+                  <p class="card-text color_3">Topped with red & white sauce, mozzarella, succulent shrimp with a twist
+                    of mashed mustard, chili-flakes & parsley</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Pasta Tab -->
+        <div class="tab-pane fade" id="pills-pasta" role="tabpanel" aria-labelledby="pills-pasta-tab">
+          <div class="row">
+
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card overflow-hidden h-100">
+                <div class="card_img">
+                  <img src="./assets/img/pasta-1.jpg" class="img-fluid" alt="Pasta">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title color_1">Special Chicken Cheese Pan Pasta</h5>
+                  <p class="card-text color_3">Prepared with special chicken, cheese, chef's special sauce & fresh
+                    vegetable</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card overflow-hidden h-100">
+                <div class="card_img">
+                  <img src="./assets/img/pasta-2.jpg" class="img-fluid" alt="Pasta">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title color_1">Chicken Creamy Pan Pasta</h5>
+                  <p class="card-text color_3">Deliciously cooked pasta with heavy white cream, chicken & sauce</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card overflow-hidden h-100">
+                <div class="card_img">
+                  <img src="./assets/img/pasta-3.jpg" class="img-fluid" alt="Pasta">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title color_1">Mexican Red Pan Pasta</h5>
+                  <p class="card-text color_3">Prepared with special chicken, chef's special sauce & fresh vegetable</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Burger Tab -->
+        <div class="tab-pane fade" id="pills-burger" role="tabpanel" aria-labelledby="pills-burger-tab">
+          <iv class="row">
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card overflow-hidden h-100">
+                <div class="card_img">
+                  <img src="./assets/img/burger-1.jpg" class="img-fluid" alt="Burger">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title color_1">Soft & Juicy Chicken Burger</h5>
+                  <p class="card-text color_3">Prepared with grilled chicken, chef's special sauce & fresh vegetable</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card overflow-hidden h-100">
+                <div class="card_img">
+                  <img src="./assets/img/burger-2.jpg" class="img-fluid" alt="Burger">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title color_1">Grilled Chicken Steak Burger</h5>
+                  <p class="card-text color_3">Prepared with grilled chicken steak, chef's special sauce & fresh
+                    vegetable</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card overflow-hidden h-100">
+                <div class="card_img">
+                  <img src="./assets/img/burger-3.jpg" class="img-fluid" alt="Burger">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title color_1">BBQ Chicken Naga Burger</h5>
+                  <p class="card-text color_3">Prepared with bbq chicken patty, 1x cheese slice, naga sauce, chef's
+                    special sauce & fresh vegetable</p>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+  <!-- Contract Section -->
+  <section class="contract-section">
+    <div class="container">
+      <div class="contract_heading py-4">
+        <h1 class="color_1 text-center">Contract Us</h1>
+      <p class="color_3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+      </div>
+      <div class="row">
+
+        <div class="col-12 col-md-6 mb-4">
+          <div class="contract_info">
+            <h5 class="color_1 pb-3">Contact Form</h5>
+
+            <form action="" method="">
+
+              <div class="form-group mb-3 ">
+                <label class="color_4">Name:</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name" required>
+              </div>
+
+              <div class="form-group mb-3">
+                <label class="color_4">Email:</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email" required>
+              </div>
+
+              <div class="form-group mb-3">
+                <label class="color_4">Message:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="9"
+                  placeholder="Enter Your Message" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-danger">Submit</button>
+            </form>
+
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 mb-4">
+          <div class="contract_info">
+            <h5 class="color_1 pb-3">Contact Information</h5>
+
+            <ul class="list-unstyled">
+
+              <li class="pb-3 color_4">
+                <span class="fs-5"><i class="fa-solid fa-phone"></i></span>
+                <span class="ms-2">+880 1754548550</span>
+              </li>
+
+              <li class="pb-3 color_4">
+                <span class="fs-5"><i class="fa-solid fa-envelope"></i></span>
+                <span class="ms-2">hellofood88@gmail.com</span>
+              </li>
+
+              <li class="pb-3 color_4">
+                <span class="fs-4"><i class="fa-solid fa-location-dot"></i></span>
+                <span class="ms-2">Noor Mansion (3rd Floor), Opposite of Radda MCH-FP Centre, Plot#4, Main Road, 1 Mirpur 10 Roundabout, Dhaka 1216</span>
+              </li>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.3279853221843!2d90.36787901744384!3d23.8069333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c143f3c5cb41%3A0x96cc2b8d847ada3e!2sEuropean%20IT%20Institute!5e0!3m2!1sen!2sbd!4v1734852605774!5m2!1sen!2sbd" width="100%" height="299" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <script src="./vendor/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

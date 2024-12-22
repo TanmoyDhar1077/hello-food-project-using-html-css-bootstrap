@@ -1,0 +1,149 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Common CSS */
+
+.color_1, .color_2 {
+    font-weight: bold;
+    color: #ca3434;
+}
+
+.color_3{
+    color: #dc7777;
+}
+
+.color_4{
+    color: #e22a2a;
+}
+
+/* NavBar Section */
+
+.navbar-section img {
+    height: 30px;
+    width: 30px;
+}
+
+.navbar-section .color_1 {
+    font-weight: bold;
+    color: #FFAA5A;
+}
+
+.navbar-section .color_2 {
+    font-weight: bold;
+    color: #242f51;
+}
+
+
+.navbar-section .nav-link:hover {
+    color: black !important;
+}
+
+.navbar-section .my_dropdown {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: 0.4s;
+}
+
+.navbar-section .my_dropdown_item:hover .my_dropdown {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    z-index: 1;
+}
+
+
+/* Hero Section */
+
+.hero-section{
+    position: relative;
+}
+
+.hero-section .text_position{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* .hero-section .banner-slide img {
+    height: calc(100vh - 72px);
+    width: 100%;
+} */
+
+.hero-section .carousel-item img {
+    height: calc(100vh - 72px);
+    width: 100%;
+}
+
+.hero-section .carousel-indicators button {
+    width: 12px; 
+    height: 12px; 
+    border-radius: 50%; 
+    background-color: #410101f6; 
+    border: none; 
+    margin-right: 10px;
+}
+
+.hero-section .carousel-indicators .active {
+    background-color: #ff0000;
+}
+
+
+/* Gallery Section */
+
+.gallery-section h1 {    
+    font-weight: bold;
+    color: #ca3434;
+}
+
+.gallery-section .card_img {
+    height: 250px; 
+    overflow: hidden; 
+}
+ 
+.gallery-section .card_img img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    transition: all 0.5s ease-in-out;
+}
+
+
+.gallery-section .card_img img:hover {
+    transform: scale(1.1);
+}
+
+.gallery-section .color_3{
+    text-align: justify;
+}
+
+.gallery-section .nav-link{
+    color: #db3545;
+}
+
+.gallery-section .nav-pills .nav-link.active/* , .nav-pills .show>.nav-link */ {
+    color:white !important;
+    background-color: #db3545 !important;
+}
+
+/* Contact Section */
+
+.contract-section .form-control{
+    border: 1px solid #dc7777 !important;
+    color: #e22a2a !important;
+}
+
+.contract-section .form-control::placeholder{
+    color: #dc7777 ;
+}
+
+.contract-section .form-control:focus {
+    border-color: #ff7b7b !important;
+    box-shadow: 0 0 0 .25rem #c9020238 !important;
+    color: #e22a2a !important;
+}
+
