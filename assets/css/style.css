@@ -147,3 +147,20 @@ body {
     color: #e22a2a !important;
 }
 
+/* Footer Section */
+
+.footer-section {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #c93434;
+}
+
+.footer-section a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-section a:hover{
+    color: #0207f9;
+    text-decoration: underline;
+}
