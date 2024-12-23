@@ -130,6 +130,40 @@ body {
     background-color: #db3545 !important;
 }
 
+/* FAQ Section */
+
+.faq-section .accordion-item {
+    border: 1px solid #dc7777 !important;
+}
+
+.faq-section .accordion {
+    --bs-accordion-active-bg: #ff7b7b !important;
+    --bs-accordion-btn-active-color: #ffffff; /* Text color inside the active box */
+}
+
+.faq-section .accordion-button {
+    color: #e22a2a; /* Default text color */
+    box-shadow: none; /* Remove default Bootstrap box shadow */
+}
+
+/* Active state for accordion button */
+.faq-section .accordion-button:not(.collapsed) {
+    color: #ffffff; /* White text inside active box */
+    background-color: #ff7b7b; /* Keep the active background */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7) !important; /* Light red box shadow */
+}
+
+/* Collapsed state for accordion button */
+.faq-section .accordion-button.collapsed {
+    color: #e22a2a !important; /* Reset text color to default when collapsed */
+    background-color: #ffffff; /* Reset background to default */
+}
+
+.faq-section .accordion-button:focus {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7) !important; 
+}
+
+
 /* Contact Section */
 
 .contract-section .form-control{
