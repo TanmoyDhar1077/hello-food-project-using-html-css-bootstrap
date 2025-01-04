@@ -29,10 +29,6 @@ body {
     width: 30px;
 }
 
-.navbar-section .color_1 {
-    font-weight: bold;
-    color: #FFAA5A;
-}
 
 .navbar-section .color_2 {
     font-weight: bold;
@@ -71,16 +67,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-/* .hero-section .banner-slide img {
-    height: calc(100vh - 72px);
-    width: 100%;
-} */
-
-.hero-section .carousel-item img {
-    height: calc(100vh - 72px); 
-    width: 100%;
 }
 
 .hero-section .carousel-indicators button {
