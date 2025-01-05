@@ -1,0 +1,13 @@
+@media (max-width: 575px) {
+    /* Add your responsive styles here */
+    .hero-section .color_1 {
+        font-size: 16px;
+    }
+
+    .hero-section .color_2 {
+        font-size: 12px;
+    }
+    .btn {
+        font-size: 12px !important;
+    }
+}
