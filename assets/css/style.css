@@ -60,6 +60,7 @@ body {
 
 .hero-section{
     position: relative;
+    overflow: hidden;
 }
 
 .hero-section .text_position{
@@ -67,6 +68,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-left: 115px;
 }
 
 .hero-section .carousel-indicators button {
