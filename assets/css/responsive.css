@@ -14,4 +14,8 @@
     .btn {
         font-size: 12px !important;
     }
+
+    .hero-section .text_position {
+        text-align: center;
+    }
 }
